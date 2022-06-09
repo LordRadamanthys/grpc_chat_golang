@@ -44,7 +44,6 @@ func (is *ChatServer) ChatService(csi Services_ChatServiceServer) error {
 
 //receive messages
 func receiveFromStream(csi_ Services_ChatServiceServer, clientUniqueCode_ int, errch_ chan error) {
-
 	//implement a loop
 	for {
 		mssg, err := csi_.Recv()
